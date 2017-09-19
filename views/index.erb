@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>Caesar Cypher application</h2>
+    </header>
+      <form>
+        <div class="sentence">
+          <label for="sentence">Write your message here :</label>
+          <input type='text' name='sentence' id="sentence" value="<%= sentence %>"/>
+        </div>
+        <div class="shift">
+          <label for="shift">Write your shift here :</label>
+          <input type='integer' name='shift' value="<%= shift %>"/>
+        </div>
+        <div class="submit">
+          <input class="button" type='submit' value='Cipher!' />
+        </div>
+      </form>
+      <div class="message">
+        <h4>This is your ciphered message :</h4>
+        <p>
+          <%= ciphered_message %>
+        </p>
+      </div>
+    </body>
+</html>

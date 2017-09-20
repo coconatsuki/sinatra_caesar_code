@@ -13,9 +13,3 @@ get '/' do
 end
 
 #methods :
-
-  def checking(num)
-    if num < 1
-      "\nYou made a mistake. Please give me a positive number."
-    end
-  end
